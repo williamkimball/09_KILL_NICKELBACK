@@ -18,7 +18,7 @@ namespace nickelback
             ("Third Eye Blind", "Jumper"),
             };
 
-            foreach (var song in songs)
+            foreach ((string, string) song in songs)
             {
                 if (song.Item1 != "Nickelback"){
                     goodSongs.Add(song);
@@ -26,7 +26,7 @@ namespace nickelback
 
             }
 
-            foreach (var thing in goodSongs) {
+            foreach ((string, string) thing in goodSongs) {
                 Console.WriteLine(thing);
             }
 
