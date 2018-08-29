@@ -8,14 +8,15 @@ namespace nickelback
         static void Main(string[] args)
         {
             List<(string, string)> goodSongs = new List<(string artist, string title)>();
-            HashSet<(string, string)> songs = new HashSet<(string, string)>();
-            songs.Add (("Nickelback", "Rockstar"));
-            songs.Add (("Nickelback", "You Remind Me"));
-            songs.Add (("Nickelback", "Far Away"));
-            songs.Add (("Nickelback", "Someday"));
-            songs.Add (("Daughtry", "Home"));
-            songs.Add (("3 Doors Down", "One Light"));
-            songs.Add (("Third Eye Blind", "Jumper"));
+            HashSet<(string, string)> songs = new HashSet<(string, string)>(){
+            ("Nickelback", "Rockstar"),
+            ("Nickelback", "You Remind Me"),
+            ("Nickelback", "Far Away"),
+            ("Nickelback", "Someday"),
+            ("Daughtry", "Home"),
+            ("3 Doors Down", "One Light"),
+            ("Third Eye Blind", "Jumper"),
+            };
 
             foreach (var song in songs)
             {
